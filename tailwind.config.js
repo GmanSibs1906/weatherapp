@@ -1,11 +1,25 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/App.js", "./src/components/WeatherApp.js"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#31255a",
+        secondery: {
+          100: "#54416d",
+          200: "#2b235a	",
+          300: "#75b4e3",
+          400: "#8fe0ff	",
+        },
+      },
+      fontFamily: {
+        body: ["Poppins"],
+        body1: ["Merriweather"],
+      },
+      screens: {
+        tablet: { raw: "(max-width: 1284px)" },
+        phone: { raw: "(max-width: 474px)" },
+      },
+    },
   },
   plugins: [],
-}
-
+};
