@@ -196,12 +196,12 @@ function WeatherApp() {
             <div className="flex justify-center gap-x-6 phone:flex-wrap  ">
               <div className="pl-10 phone:pl-0 justify-center">
                 {weather.name ? (
-                  <h2 className="text-[50px] flex justify-center">
+                  <h2 className="text-[40px] flex justify-center">
                     {weather.name}
                   </h2>
                 ) : (
                   <h2 className="text-[50px] flex justify-center items center">
-                    Cañada
+                    Johannesburg
                   </h2>
                 )}
                 <div className="flex justify-center items-center text-center">
@@ -272,44 +272,7 @@ function WeatherApp() {
               </button>
             </form>
           </div>
-          {/* <div className="flex phone:px-10 flex-col text-yellow-50 pt-6  w-full">
-            <h4
-              name="New york"
-              onClick={(e) =>
-                setTerm(e.target.getAttribute("name"), fetchdata(term))
-              }
-              className="mt-14 cursor-pointer hover:text-secondery-400"
-            >
-              New york
-            </h4>
-            <h4
-              name="  California"
-              onClick={(e) =>
-                setTerm(e.target.getAttribute("name"), fetchdata(term))
-              }
-              className="mt-12 cursor-pointer hover:text-secondery-400"
-            >
-              California
-            </h4>
-            <h4
-              name="    paris"
-              onClick={(e) =>
-                setTerm(e.target.getAttribute("name"), fetchdata(term))
-              }
-              className="mt-12 cursor-pointer hover:text-secondery-400"
-            >
-              paris
-            </h4>
-            <h4
-              name="tokyo"
-              onClick={(e) =>
-                setTerm(e.target.getAttribute("name"), fetchdata(term))
-              }
-              className="mt-12 cursor-pointer hover:text-secondery-400"
-            >
-              tokyo
-            </h4>
-          </div> */}
+          
           <div className="pt-16  phone:px-10  flex flex-col">
             <hr className=" " />
             <h1 className="pt-16 font-bold text-2xl">Weather Details</h1>
